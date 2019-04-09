@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Estilos CSS de Zaindu App -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="assets/css/multi-select.css" type="text/css"/>
+
+    <title>Zaindu App</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="logo-navbar" src="img/logo_egibide.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="profesor-index.html">Profesores <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="aulas.html">Aulas <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alumnos.html">Alumnos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="grupos.html">Grupos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checklists.html">Checklists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checklists.html">Auditorías</a>
+                </li>
+            </ul>
+            <a class="nav-link btn btn-outline-white mr-2" href="#">Nueva Auditoría</a>
+            <ul class="navbar-nav ml-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Cerrar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main role="main" class="container">
+
+    <h4 class="mt-4 mb-4">Nueva ocupación de aula</h4>
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h5 class="border-bottom border-gray pb-2 mb-0">Información general</h5>
+        <form class="needs-validation mt-4" novalidate="">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="campus">Campus</label>
+                    <select class="custom-select d-block w-100" id="campus" required="">
+                        <option value="">Elige campus...</option>
+                        <option>Arriaga</option>
+                        <option>Nieves Cano</option>
+                        <option>Molinuevo</option>
+                        <option>Jesús Obrero</option>
+                        <option>Mendizorrotza</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un campus válido.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="aula">Aula</label>
+                    <select class="custom-select d-block w-100" id="aula" required="">
+                        <option value="">Elige aula...</option>
+                        <option>110</option>
+                        <option>112</option>
+                        <option>114</option>
+                        <option>121</option>
+                        <option>122</option>
+                        <option>123</option>
+                        <option>130</option>
+                        <option>134</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un aula válida.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="dia">Día de la semana</label>
+                    <select class="custom-select d-block w-100" id="dia" required="">
+                        <option value="">Elige día...</option>
+                        <option>Lunes</option>
+                        <option>Martes</option>
+                        <option>Miércoles</option>
+                        <option>Jueves</option>
+                        <option>Viernes</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un día válido.
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-4">Checklist</h5>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Lunes</h5>
+                    <table class="table table-hover table-responsive-sm">
+                    <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Grupo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:15-09:10</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:10-10:05</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:05-11:00</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30-12:25</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:25-13:20</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:20-14:15</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Martes</h5>
+                    <table class="table table-hover table-responsive-sm">
+                        <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Grupo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>08:15-09:10</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:10-10:05</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:05-11:00</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30-12:25</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:25-13:20</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:20-14:15</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Miércoles</h5>
+                    <table class="table table-hover table-responsive-sm">
+                        <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Grupo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>08:15-09:10</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:10-10:05</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:05-11:00</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30-12:25</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:25-13:20</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:20-14:15</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Jueves</h5>
+                    <table class="table table-hover table-responsive-sm">
+                        <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Grupo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>08:15-09:10</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:10-10:05</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:05-11:00</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30-12:25</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:25-13:20</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:20-14:15</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Viernes</h5>
+                    <table class="table table-hover table-responsive-sm">
+                        <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Grupo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>08:15-09:10</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:10-10:05</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:05-11:00</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30-12:25</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:25-13:20</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:20-14:15</td>
+                            <td>
+                                <select class="custom-select d-block w-100" id="grupo">
+                                    <option>- LIBRE -</option>
+                                    <option>131KB</option>
+                                    <option>131LG</option>
+                                    <option>131GA</option>
+                                    <option>132KB</option>
+                                    <option>141GA</option>
+                                    <option>142GA</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">ENVIAR</button>
+        </form>
+
+
+
+        <small class="d-block text-right mt-3">
+            <a href="#">Ayuda</a>
+        </small>
+    </div>
+
+</main>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

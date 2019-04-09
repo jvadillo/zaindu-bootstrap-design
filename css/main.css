@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: left;
+    background-color: #f5f7fb;
+}
+
+.logo-navbar {
+    height: 36px;
+    max-width: 200px;
+}
+
+/* Fondo morado nvbar*/
+.bg-dark {
+    background-color: #82005d!important;
+}
+
+.btn-outline-primary {
+    color: #82005d!important;
+    background-color: transparent;
+    background-image: none;
+    border-color: #82005d!important;
+}
+
+.btn-outline-primary:hover, .btn-primary {
+    color: #fff!important;
+    background-color: #82005d!important;
+    border-color: #82005d!important;
+}
+
+
+/* Estilos de tabla de búsqueda*/
+.table th {
+    border-top: none;
+}
+
+.menu-lateral {
+    height: fit-content;
+}
+
+
+.list-group-item.active {
+    background: #F0F0F0!important;
+    border: none;
+    color: #495057!important;
+}
+
+/* Estilos barra de navegación*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8)!important;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(255,255,255,1)!important;
+}
+
+.btn-outline-white {
+    background: transparent!important;
+    border: 1px solid rgba(255,255,255,.8)!important;
+    color: rgba(255,255,255,.8)!important;
+}
+
+.btn-outline-white:hover {
+    background: transparent!important;
+    border: 1px solid rgba(255,255,255,1)!important;;
+    color: #fff!important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,1)!important;
+}
+
+/* Estilos de barra de navegación secundaria*/
+
+.nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+    color: #007bff;
+}
+
+.nav-underline .active {
+    font-weight: 500;
+    color: #343a40;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Estilos CSS de Zaindu App -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="assets/css/multi-select.css" type="text/css"/>
+
+    <title>Zaindu App</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img class="logo-navbar" src="img/logo_egibide.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link btn btn-outline-white mr-2" href="#">Nueva Auditoría</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Cerrar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main role="main" class="container">
+
+    <h4 class="mt-4 mb-4">Nueva auditoría</h4>
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h5 class="border-bottom border-gray pb-2 mb-0">Información general</h5>
+        <form class="needs-validation mt-4" novalidate="">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="country">Campus</label>
+                    <select class="custom-select d-block w-100" id="campus" required="">
+                        <option value="">Elige campus...</option>
+                        <option>Arriaga</option>
+                        <option>Nieves Cano</option>
+                        <option>Molinuevo</option>
+                        <option>Jesús Obrero</option>
+                        <option>Mendizorrotza</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un campus válido.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="country">Aula</label>
+                    <select class="custom-select d-block w-100" id="aula" required="">
+                        <option value="">Elige aula...</option>
+                        <option>110</option>
+                        <option>112</option>
+                        <option>114</option>
+                        <option>121</option>
+                        <option>122</option>
+                        <option>123</option>
+                        <option>130</option>
+                        <option>134</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un aula válida.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="grupo">Grupo (autocompletado)</label>
+                    <select class="custom-select d-block w-100" id="grupo" required="" disabled>
+                        <option>131KB</option>
+                        <option>132GA</option>
+                        <option>132KB</option>
+                        <option>134KB</option>
+                        <option>135KB</option>
+                        <option>141GA</option>
+                        <option selected>142GA</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un grupo válido.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="estudiante">Estudiante</label>
+                    <select class="custom-select d-block w-100" id="estudiante" required="">
+                        <option value="">Elige estudiante...</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                        <option>Nombre Apellido1 Apellido2</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un estudiante válido.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="iniciofinal">¿Inicio o final de la clase?</label>
+                    <select class="custom-select d-block w-100" id="iniciofinal" required="">
+                        <option>Inicio</option>
+                        <option>Fin</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Introduce un valor válido.
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-4">Checklist</h5>
+
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item1" type="checkbox">
+                <label class="custom-control-label" for="checklist-item1">Todas las herramientas están en los estuches, ordenadas en el armario</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item2" type="checkbox">
+                <label class="custom-control-label" for="checklist-item2">Los discos de los PCs están guardados en el armario.</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item3" type="checkbox">
+                <label class="custom-control-label" for="checklist-item3">Todas las herramientas están en los estuches, ordenadas en el armario</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item4" type="checkbox">
+                <label class="custom-control-label" for="checklist-item4">Los discos de los PCs están guardados en el armario.</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item5" type="checkbox">
+                <label class="custom-control-label" for="checklist-item5">Todas las herramientas están en los estuches, ordenadas en el armario</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item6" type="checkbox">
+                <label class="custom-control-label" for="checklist-item6">Los discos de los PCs están guardados en el armario.</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item7" type="checkbox">
+                <label class="custom-control-label" for="checklist-item7">Los discos de los PCs están guardados en el armario.</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item8" type="checkbox">
+                <label class="custom-control-label" for="checklist-item8">Todas las herramientas están en los estuches, ordenadas en el armario</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" id="checklist-item9" type="checkbox">
+                <label class="custom-control-label" for="checklist-item9">Los discos de los PCs están guardados en el armario.</label>
+            </div>
+
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-4">Fotos</h5>
+
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Selecciona las fotos que quieres añadir</label>
+            </div>
+
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-4">Comentarios</h5>
+
+            <div class="mb-3">
+                <label for="comentarios">Añade los comentarios que consideres oportunos.</label>
+                <textarea class="form-control" id="comentarios" placeholder="" value="" required="" rows="5">
+              </textarea>
+            </div>
+
+
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">ENVIAR</button>
+        </form>
+
+
+
+        <small class="d-block text-right mt-3">
+            <a href="#">Ayuda</a>
+        </small>
+    </div>
+
+</main>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
